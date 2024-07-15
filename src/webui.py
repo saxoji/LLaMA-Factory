@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 import os
 
 from llamafactory.webui.interface import create_ui
@@ -20,8 +21,10 @@ from llamafactory.webui.interface import create_ui
 def main():
     gradio_share = os.environ.get("GRADIO_SHARE", "0").lower() in ["true", "1"]
     server_name = os.environ.get("GRADIO_SERVER_NAME", "0.0.0.0")
+    server_port = int(os.environ.get("GRADIO_SERVER_PORT", "7861"))  # 기본 포트를 7860으로 설정
     create_ui().queue().launch(share=gradio_share, server_name=server_name, inbrowser=True)
 
 
 if __name__ == "__main__":
     main()
+

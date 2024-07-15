@@ -2,6 +2,154 @@
   "identity": {
     "file_name": "identity.json"
   },
+  "Linkbricks-qa-wiki": {
+    "hf_hub_url": "Saxo/ko_wiki_qa_linkbricks_dataset_for_llama3",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output"
+    }
+  },
+  "Linkbricks-qa-namuwiki": {
+    "hf_hub_url": "Saxo/namuwiki_ko_linkbricks_single_dataset_with_prompt_text_huggingface",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output"
+    }
+  },
+  "Linkbricks-qa-medical": {
+    "hf_hub_url": "Saxo/ko_medical_meadow_med_qa_options_linkbricks_single_dataset_with_prompt_text_huggingface",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks-summary": {
+    "hf_hub_url": "Saxo/ko_summarization_linkbricks_single_dataset_with_prompt_text_huggingface_sampled",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks-j2k": {
+    "hf_hub_url": "Saxo/jp_ko_translation_tech_social_science_linkbricks_single_dataset_with_prompt_text_huggingface",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks-c2k": {
+    "hf_hub_url": "Saxo/cn_ko_translation_tech_social_science_linkbricks_single_dataset_with_prompt_text_huggingface",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks-e2k-social-science": {
+    "hf_hub_url": "Saxo/en_ko_translation_social_science_linkbricks_single_dataset_with_prompt_text_huggingface",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks-e2k-tect-science": {
+    "hf_hub_url": "Saxo/en_ko_translation_tech_science_linkbricks_single_dataset_with_prompt_text_huggingface",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks-qa-government": {
+    "hf_hub_url": "Saxo/ko_government_qa_total_linkbricks_single_dataset_with_prompt_text_huggingface_sampled",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks-qa-platypus-logical": {
+    "hf_hub_url": "Saxo/kopen_platypus_ko_linkbricks_single_dataset_with_prompt_text_huggingface",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output"
+    }
+  },
+  "Linkbricks-qa-orca-logical": {
+    "hf_hub_url": "Saxo/OpenOrca_cleaned_kor_linkbricks_single_dataset_with_prompt_text_huggingface",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks-aspect-sentiment": {
+    "hf_hub_url": "Saxo/ko_aspect_sentiment_sns_mall_sentiment_linkbricks_single_dataset_with_prompt_text_huggingface",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks-qa-knowledge": {
+    "hf_hub_url": "HAERAE-HUB/qarv-instruct-100k",
+    "columns": {
+      "prompt": "instruction",
+      "response": "response"
+    }
+  },
+  "Linkbricks-total": {
+    "hf_hub_url": "Saxo/linkbricks_ko_corpus_alpaca_dataset_total_1",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks-dpo": {
+    "hf_hub_url": "maywell/ko_Ultrafeedback_binarized",
+    "columns": {
+      "prompt": "prompt",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "Linkbricks-alpaca": {
+    "hf_hub_url": "Bingsu/ko_alpaca_data",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "Linkbricks-function-call-sharegpt": {
+    "hf_hub_url": "lilacai/glaive-function-calling-v2-sharegpt",
+    "columns": {
+      "prompt": "chat",
+      "system": "system",
+      "messages": "conversations"
+    },
+    "tags": {
+      "role_tag": "from",
+      "content_tag": "value",
+      "user_tag": "human",
+      "assistant_tag": "gpt",
+      "observation_tag": "tool",
+      "system_tag": "system"
+    }
+  },
+  "Linkbricks-function-call-alpaca": {
+    "hf_hub_url": "Saxo/alpaca_function_calling_dataset",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output",
+      "system": "system"
+    }
+  },
   "alpaca_en_demo": {
     "file_name": "alpaca_en_demo.json"
   },

@@ -2,21 +2,43 @@
   "identity": {
     "file_name": "identity.json"
   },
-  "Linkbricks-qa-wiki": {
+  "Linkbricks_qa_wiki": {
     "hf_hub_url": "Saxo/ko_wiki_qa_linkbricks_dataset_for_llama3",
     "columns": {
       "prompt": "instruction",
       "response": "output"
     }
   },
-  "Linkbricks-qa-namuwiki": {
+  "Linkbricks_qa_namuwiki": {
     "hf_hub_url": "Saxo/namuwiki_ko_linkbricks_single_dataset_with_prompt_text_huggingface",
     "columns": {
       "prompt": "instruction",
       "response": "output"
     }
   },
-  "Linkbricks-qa-medical": {
+  "Linkbricks_ko_gsm": {
+    "hf_hub_url": "kuotient/gsm8k-ko",
+    "columns": {
+      "prompt": "question",
+      "response": "answer"
+    }
+  },
+  "Linkbricks_en_gsm": {
+    "hf_hub_url": "kuotient/gsm8k-ko",
+    "columns": {
+      "prompt": "question_en",
+      "response": "answer_en"
+    }
+  },
+  "Linkbricks_qa_ko_1m_total": {
+    "hf_hub_url": "lcw99/wikipedia-korean-20240501-1million-qna",
+    "columns": {
+      "prompt": "question",
+      "query": "context",
+      "response": "answer"
+    }
+  },
+  "Linkbricks_qa_medical_1": {
     "hf_hub_url": "Saxo/ko_medical_meadow_med_qa_options_linkbricks_single_dataset_with_prompt_text_huggingface",
     "columns": {
       "prompt": "instruction",
@@ -24,7 +46,66 @@
       "response": "output"
     }
   },
-  "Linkbricks-summary": {
+  "Linkbricks_qa_medical_2": {
+    "hf_hub_url": "Malikeh1375/medical-question-answering-datasets",
+    "subset": "all-processed",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "Linkbricks_qa_medical_3": {
+    "hf_hub_url": "medalpaca/medical_meadow_medical_flashcards",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "Linkbricks_qa_medical_4": {
+    "hf_hub_url": "meher146/medical_llama3_instruct_dataset",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "Linkbricks_qa_medical_5": {
+    "hf_hub_url": "Pistachio-LLM/Medical-llama3-finetune-train",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output"
+    }
+  },
+  "Linkbricks_qa_medical_6": {
+    "hf_hub_url": "BI55/MedText",
+    "columns": {
+      "prompt": "Prompt",
+      "response": "Completion"
+    }
+  },
+  "Linkbricks_chat_medical_1": {
+    "hf_hub_url": "j5ng/ko_medical_chat_v2",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "client",
+      "assistant_tag": "doctor"
+    }
+  },
+  "Linkbricks_identiy_qa": {
+    "hf_hub_url": "Saxo/ko_linkbricks_identity_dataset",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output"
+    }
+  },
+  "Linkbricks_summary": {
     "hf_hub_url": "Saxo/ko_summarization_linkbricks_single_dataset_with_prompt_text_huggingface_sampled",
     "columns": {
       "prompt": "instruction",
@@ -32,7 +113,7 @@
       "response": "output"
     }
   },
-  "Linkbricks-j2k": {
+  "Linkbricks_j2k": {
     "hf_hub_url": "Saxo/jp_ko_translation_tech_social_science_linkbricks_single_dataset_with_prompt_text_huggingface",
     "columns": {
       "prompt": "instruction",
@@ -40,7 +121,15 @@
       "response": "output"
     }
   },
-  "Linkbricks-c2k": {
+  "Linkbricks_k2j": {
+    "hf_hub_url": "Saxo/ko_jp_translation_tech_social_science_linkbricks_single_dataset",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks_c2k": {
     "hf_hub_url": "Saxo/cn_ko_translation_tech_social_science_linkbricks_single_dataset_with_prompt_text_huggingface",
     "columns": {
       "prompt": "instruction",
@@ -48,7 +137,15 @@
       "response": "output"
     }
   },
-  "Linkbricks-e2k-social-science": {
+  "Linkbricks_k2c": {
+    "hf_hub_url": "Saxo/ko_cn_translation_tech_social_science_linkbricks_single_dataset",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks_e2k_social_science": {
     "hf_hub_url": "Saxo/en_ko_translation_social_science_linkbricks_single_dataset_with_prompt_text_huggingface",
     "columns": {
       "prompt": "instruction",
@@ -56,7 +153,7 @@
       "response": "output"
     }
   },
-  "Linkbricks-e2k-tect-science": {
+  "Linkbricks_e2k_tech_science": {
     "hf_hub_url": "Saxo/en_ko_translation_tech_science_linkbricks_single_dataset_with_prompt_text_huggingface",
     "columns": {
       "prompt": "instruction",
@@ -64,7 +161,23 @@
       "response": "output"
     }
   },
-  "Linkbricks-qa-government": {
+  "Linkbricks_k2e_social_science": {
+    "hf_hub_url": "Saxo/ko_en_translation_social_science_linkbricks_single_dataset",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks_k2e_tech_science": {
+    "hf_hub_url": "Saxo/ko_en_translation_tech_science_linkbricks_single_dataset",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks_qa_government": {
     "hf_hub_url": "Saxo/ko_government_qa_total_linkbricks_single_dataset_with_prompt_text_huggingface_sampled",
     "columns": {
       "prompt": "instruction",
@@ -72,14 +185,14 @@
       "response": "output"
     }
   },
-  "Linkbricks-qa-platypus-logical": {
+  "Linkbricks_qa_platypus-logical": {
     "hf_hub_url": "Saxo/kopen_platypus_ko_linkbricks_single_dataset_with_prompt_text_huggingface",
     "columns": {
       "prompt": "instruction",
       "response": "output"
     }
   },
-  "Linkbricks-qa-orca-logical": {
+  "Linkbricks_qa_orca_logical": {
     "hf_hub_url": "Saxo/OpenOrca_cleaned_kor_linkbricks_single_dataset_with_prompt_text_huggingface",
     "columns": {
       "prompt": "instruction",
@@ -87,7 +200,7 @@
       "response": "output"
     }
   },
-  "Linkbricks-aspect-sentiment": {
+  "Linkbricks_aspect_sentiment": {
     "hf_hub_url": "Saxo/ko_aspect_sentiment_sns_mall_sentiment_linkbricks_single_dataset_with_prompt_text_huggingface",
     "columns": {
       "prompt": "instruction",
@@ -95,14 +208,14 @@
       "response": "output"
     }
   },
-  "Linkbricks-qa-knowledge": {
+  "Linkbricks_qa_knowledge": {
     "hf_hub_url": "HAERAE-HUB/qarv-instruct-100k",
     "columns": {
       "prompt": "instruction",
       "response": "response"
     }
   },
-  "Linkbricks-total": {
+  "Linkbricks_total": {
     "hf_hub_url": "Saxo/linkbricks_ko_corpus_alpaca_dataset_total_1",
     "columns": {
       "prompt": "instruction",
@@ -110,15 +223,26 @@
       "response": "output"
     }
   },
-  "Linkbricks-dpo": {
+  "Linkbricks_dpo_1": {
     "hf_hub_url": "maywell/ko_Ultrafeedback_binarized",
+    "ranking": true,
     "columns": {
       "prompt": "prompt",
       "chosen": "chosen",
       "rejected": "rejected"
     }
   },
-  "Linkbricks-alpaca": {
+  "Linkbricks_dpo_2": {
+    "hf_hub_url": "youjunhyeok/ko-orca-pair-and-ultrafeedback-dpo",
+    "ranking": true,
+    "columns": {
+      "prompt": "prompt",
+      "chosen": "chosen",
+      "rejected": "rejected",
+      "system": "system"
+    }
+  },
+  "Linkbricks_alpaca": {
     "hf_hub_url": "Bingsu/ko_alpaca_data",
     "columns": {
       "prompt": "instruction",
@@ -126,7 +250,7 @@
       "response": "output"
     }
   },
-  "Linkbricks-function-call-sharegpt": {
+  "Linkbricks_function_call-sharegpt": {
     "hf_hub_url": "lilacai/glaive-function-calling-v2-sharegpt",
     "columns": {
       "prompt": "chat",
@@ -142,12 +266,78 @@
       "system_tag": "system"
     }
   },
-  "Linkbricks-function-call-alpaca": {
+  "Linkbricks_function_call_alpaca": {
     "hf_hub_url": "Saxo/alpaca_function_calling_dataset",
     "columns": {
       "prompt": "instruction",
       "response": "output",
       "system": "system"
+    }
+  },
+  "Linkbricks_cpt_news_1": {
+    "hf_hub_url": "Saxo/ko-news-corpus-1",
+    "columns": {
+      "prompt": "sentence"
+    }
+  },
+  "Linkbricks_cpt_news_2": {
+    "hf_hub_url": "Saxo/ko-news-corpus-2",
+    "columns": {
+      "prompt": "sentence"
+    }
+  },
+  "Linkbricks_cpt_news_3": {
+    "hf_hub_url": "Saxo/ko-news-corpus-3",
+    "columns": {
+      "prompt": "sentence"
+    }
+  },
+  "Linkbricks_cpt_news_4": {
+    "hf_hub_url": "Saxo/ko-news-corpus-4",
+    "columns": {
+      "prompt": "sentence"
+    }
+  },
+  "Linkbricks_cpt_news_5": {
+    "hf_hub_url": "Saxo/ko-news-corpus-5",
+    "columns": {
+      "prompt": "sentence"
+    }
+  },
+  "Linkbricks_cpt_news_6": {
+    "hf_hub_url": "Saxo/ko-news-corpus-6",
+    "columns": {
+      "prompt": "sentence"
+    }
+  },
+  "Linkbricks_cpt_news_7": {
+    "hf_hub_url": "Saxo/ko-news-corpus-7",
+    "columns": {
+      "prompt": "sentence"
+    }
+  },
+  "Linkbricks_cpt_news_8": {
+    "hf_hub_url": "Saxo/ko-news-corpus-8",
+    "columns": {
+      "prompt": "sentence"
+    }
+  },
+  "Linkbricks_cpt_news_9": {
+    "hf_hub_url": "Saxo/ko-news-corpus-9",
+    "columns": {
+      "prompt": "sentence"
+    }
+  },
+  "Linkbricks_cpt_web_1": {
+    "hf_hub_url": "HAERAE-HUB/KOREAN-WEBTEXT",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "Linkbricks_cpt_web_2": {
+    "hf_hub_url": "HAERAE-HUB/KOREAN-SyntheticText-1.5B",
+    "columns": {
+      "prompt": "text"
     }
   },
   "alpaca_en_demo": {

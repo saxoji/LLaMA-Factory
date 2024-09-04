@@ -35,15 +35,16 @@ if is_gradio_available():
 def create_ui(demo_mode: bool = False) -> gr.Blocks:
     engine = Engine(demo_mode=demo_mode, pure_chat=False)
 
-    with gr.Blocks(title="LLaMA Board", css=CSS) as demo:
+    with gr.Blocks(title="Linkbricks LLM Finetuning Engine", css=CSS, head="""<link rel="icon" href="https://www.linkbricks.com/wp-content/uploads/2022/03/cropped-favicon-512-32x32.png">""") as demo:
         if demo_mode:
-            gr.HTML("<h1><center>LLaMA Board: A One-stop Web UI for Getting Started with LLaMA Factory</center></h1>")
+            gr.HTML("<h1><center>Linkbricks LLM Finetuning Engine</center></h1>")
             gr.HTML(
-                '<h3><center>Visit <a href="https://github.com/hiyouga/LLaMA-Factory" target="_blank">'
-                "LLaMA Factory</a> for details.</center></h3>"
+                '<h3><center>Visit <a href="https://www.linkbricks.com" target="_blank">'
+                "Linkbricks LLM Finetuning Engine</a> for details.</center></h3>"
             )
             gr.DuplicateButton(value="Duplicate Space for private use", elem_classes="duplicate-button")
 
+        gr.HTML("<h1><center>Linkbricks LLM Finetuning Engine</center></h1>")
         engine.manager.add_elems("top", create_top())
         lang: "gr.Dropdown" = engine.manager.get_elem_by_id("top.lang")
 
@@ -70,7 +71,7 @@ def create_ui(demo_mode: bool = False) -> gr.Blocks:
 def create_web_demo() -> gr.Blocks:
     engine = Engine(pure_chat=True)
 
-    with gr.Blocks(title="Web Demo", css=CSS) as demo:
+    with gr.Blocks(title="Linkbricks LLM Finetuning Engine", css=CSS, head="""<link rel="icon" href="https://www.linkbricks.com/wp-content/uploads/2022/03/cropped-favicon-512-32x32.png">""") as demo:
         lang = gr.Dropdown(choices=["en", "zh"])
         engine.manager.add_elems("top", dict(lang=lang))
 

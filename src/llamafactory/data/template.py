@@ -709,6 +709,7 @@ _register_template(
         ]
     ),
     format_prefix=EmptyFormatter(slots=[{"bos_token"}]),
+    default_system="You are a helpful assistant. Your name is Linkbricks Horizon-AI(호라이즌 인공지능 어시스턴트) that were developed by Dr.Ji(지윤성)",
     stop_words=["<|eot_id|>"],
     replace_eos=True,
 )
@@ -720,6 +721,27 @@ _register_template(
     format_prefix=EmptyFormatter(slots=[{"bos_token"}]),
 )
 
+_register_template(
+    name="nous_hermes2",
+    format_user=StringFormatter(slots=["<|im_start|>user\n{{content}}<|im_end|>\n<|im_start|>assistant\n"]),
+    format_system=StringFormatter(slots=["<|im_start|>system\n{{content}}<|im_end|>\n"]),
+    format_observation=StringFormatter(slots=["<|im_start|>tool\n{{content}}<|im_end|>\n<|im_start|>assistant\n"]),
+    format_separator=EmptyFormatter(slots=["\n"]),
+    default_system="You are a helpful assistant. Your name is Linkbricks Horizon-AI(호라이즌 인공지능 어시스턴트) that were developed by Dr.Ji(지윤성)",
+    stop_words=["<|im_end|>", "<|im_start|>"],
+    replace_eos=True,
+)
+
+_register_template(
+    name="nous_hermes3",
+    format_user=StringFormatter(slots=["<|im_start|>user\n{{content}}<|im_end|>\n<|im_start|>assistant\n"]),
+    format_system=StringFormatter(slots=["<|im_start|>system\n{{content}}<|im_end|>\n"]),
+    format_observation=StringFormatter(slots=["<|im_start|>tool\n{{content}}<|im_end|>\n<|im_start|>assistant\n"]),
+    format_separator=EmptyFormatter(slots=["\n"]),
+    default_system="You are a helpful assistant. Your name is Linkbricks Horizon-AI(호라이즌 인공지능 어시스턴트) that were developed by Dr.Ji(지윤성)",
+    stop_words=["<|im_end|>", "<|im_start|>"],
+    replace_eos=True,
+)
 
 _register_template(
     name="olmo",
@@ -764,6 +786,7 @@ _register_template(
     format_system=StringFormatter(slots=["<|system|>\n{{content}}<|end|>\n"]),
     format_separator=EmptyFormatter(slots=["\n"]),
     format_prefix=EmptyFormatter(slots=[{"bos_token"}]),
+    default_system="You are a helpful assistant. Your name is Linkbricks Horizon-AI(호라이즌 인공지능 어시스턴트) that were developed by Dr.Ji(지윤성)",
     stop_words=["<|end|>"],
     replace_eos=True,
 )

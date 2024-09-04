@@ -531,6 +531,10 @@ register_model_group(
         "Gemma-1.1-7B-Chat": {
             DownloadSource.DEFAULT: "google/gemma-1.1-7b-it",
         },
+        "Gemma-2-2B-Chat": {
+            DownloadSource.DEFAULT: "google/gemma-2-2b-it",
+            DownloadSource.MODELSCOPE: "LLM-Research/gemma-2-2b-it",
+        },
         "Gemma-2-9B": {
             DownloadSource.DEFAULT: "google/gemma-2-9b",
             DownloadSource.MODELSCOPE: "LLM-Research/gemma-2-9b",
@@ -715,6 +719,9 @@ register_model_group(
             DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3-8B",
             DownloadSource.MODELSCOPE: "LLM-Research/Meta-Llama-3-8B",
         },
+        "LLaMA3-8B-Tool": {
+            DownloadSource.DEFAULT: "Groq/Llama-3-Groq-8B-Tool-Use",
+        },
         "LLaMA3-70B": {
             DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3-70B",
             DownloadSource.MODELSCOPE: "LLM-Research/Meta-Llama-3-70B",
@@ -727,6 +734,9 @@ register_model_group(
             DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3-70B-Instruct",
             DownloadSource.MODELSCOPE: "LLM-Research/Meta-Llama-3-70B-Instruct",
         },
+        "LLaMA3-70B-Tool": {
+            DownloadSource.DEFAULT: "Groq/Llama-3-Groq-70B-Tool-Use",
+        },
         "LLaMA3-8B-Chinese-Chat": {
             DownloadSource.DEFAULT: "shenzhi-wang/Llama3-8B-Chinese-Chat",
             DownloadSource.MODELSCOPE: "LLM-Research/Llama3-8B-Chinese-Chat",
@@ -738,6 +748,32 @@ register_model_group(
     template="llama3",
 )
 
+register_model_group(
+    models={
+        "LLaMA3.1-8B-Instruct": {
+            DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3.1-8B-Instruct",
+            DownloadSource.MODELSCOPE: "LLM-Research/Meta-Llama-3.1-8B-Instruct",
+        },
+        "LLaMA3.1-NousResearch-8B-Instruct": {
+            DownloadSource.DEFAULT: "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        },
+        "LLaMA3.1-Storm-8B-Instruct": {
+            DownloadSource.DEFAULT: "akjindal53244/Llama-3.1-Storm-8B",
+        },
+        "LLaMA3.1-70B-Instruct": {
+            DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3.1-70B-Instruct",
+            DownloadSource.MODELSCOPE: "LLM-Research/Meta-Llama-3.1-70B-Instruct",
+        },
+        "LLaMA3.1-NousResearch-70B-Instruct": {
+            DownloadSource.DEFAULT: "NousResearch/Meta-Llama-3.1-70B-Instruct",
+        },
+        "LLaMA3.1-405B-Instruct": {
+            DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3.1-405B-Instruct",
+            DownloadSource.MODELSCOPE: "LLM-Research/Meta-Llama-3.1-405B-Instruct",
+        },
+    },
+    template="llama3",
+)
 
 register_model_group(
     models={
@@ -792,6 +828,9 @@ register_model_group(
         "Mistral-7B-v0.3-Chat": {
             DownloadSource.DEFAULT: "mistralai/Mistral-7B-Instruct-v0.3",
         },
+        "Mistral-Nemo-Instruct-2407-12B": {
+            DownloadSource.DEFAULT: "mistralai/Mistral-Nemo-Instruct-2407",
+        },
     },
     template="mistral",
 )
@@ -817,6 +856,36 @@ register_model_group(
         },
     },
     template="mistral",
+)
+
+
+register_model_group(
+    models={
+        "Nous-Hermes-2-Mistral-7B-DPO": {
+            DownloadSource.DEFAULT: "NousResearch/Nous-Hermes-2-Mistral-7B-DPO",
+            DownloadSource.MODELSCOPE: "AI-ModelScope/Nous-Hermes-2-Mistral-7B-DPO",
+        },
+        "Nous-Hermes-2-Mixtral-8x7B-DPO": {
+            DownloadSource.DEFAULT: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+            DownloadSource.MODELSCOPE: "AI-ModelScope/Nous-Hermes-2-Mixtral-8x7B-DPO",
+        },
+    },
+    template="nous_hermes2",
+)
+
+register_model_group(
+    models={
+        "Nous-Hermes-3-Llama3.1-8b": {
+            DownloadSource.DEFAULT: "NousResearch/Hermes-3-Llama-3.1-8B",
+        },
+        "Nous-Hermes-3-Llama3.1-70b": {
+            DownloadSource.DEFAULT: "NousResearch/Hermes-3-Llama-3.1-70B",
+        },
+        "Nous-Hermes-3-Llama3.1-405b": {
+            DownloadSource.DEFAULT: "NousResearch/Hermes-3-Llama-3.1-405B",
+        },
+    },
+    template="nous_hermes3",
 )
 
 
@@ -957,6 +1026,17 @@ register_model_group(
     template="phi",
 )
 
+register_model_group(
+    models={
+        "Phi3.5-mini-instruct-4b": {
+            DownloadSource.DEFAULT: "microsoft/Phi-3.5-mini-instruct",
+        },
+        "Phi3.5-moe-instruct-40b": {
+            DownloadSource.DEFAULT: "microsoft/Phi-3.5-MoE-instruct",
+        },
+    },
+    template="phi",
+)
 
 register_model_group(
     models={

@@ -38,4 +38,11 @@ CSS = r"""
 .dark .modal-box {
   border: 2px solid white !important;
 }
+
+
+/* Hide the Gradio footer logo */
+footer {
+  visibility: hidden !important;
+}
+
 """

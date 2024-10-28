@@ -9,6 +9,13 @@
       "response": "output"
     }
   },
+  "Linkbricks_qa_hermes": {
+    "hf_hub_url": "MarkrAI/KOpen-HQ-Hermes-2.5-60K",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output"
+    }
+  },
   "Linkbricks_qa_namuwiki": {
     "hf_hub_url": "Saxo/namuwiki_ko_linkbricks_single_dataset_with_prompt_text_huggingface",
     "columns": {
@@ -28,6 +35,21 @@
     "columns": {
       "prompt": "question_en",
       "response": "answer_en"
+    }
+  },
+  "Linkbricks_qa_calc": {
+    "hf_hub_url": "MarkrAI/KoCommercial-Dataset",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output"
+    }
+  },
+  "Linkbricks_qa_databricks": {
+    "hf_hub_url": "nlpai-lab/databricks-dolly-15k-ko",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "response"
     }
   },
   "Linkbricks_qa_ko_1m_total": {
@@ -129,6 +151,14 @@
       "response": "output"
     }
   },
+  "Linkbricks_k2j_v2": {
+    "hf_hub_url": "Saxo/ko_jp_translation_tech_social_science_linkbricks_single_dataset_v2",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
   "Linkbricks_c2k": {
     "hf_hub_url": "Saxo/cn_ko_translation_tech_social_science_linkbricks_single_dataset_with_prompt_text_huggingface",
     "columns": {
@@ -139,6 +169,14 @@
   },
   "Linkbricks_k2c": {
     "hf_hub_url": "Saxo/ko_cn_translation_tech_social_science_linkbricks_single_dataset",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks_k2c_v2": {
+    "hf_hub_url": "Saxo/ko_cn_translation_tech_social_science_linkbricks_single_dataset_v2",
     "columns": {
       "prompt": "instruction",
       "query": "context",
@@ -177,6 +215,22 @@
       "response": "output"
     }
   },
+  "Linkbricks_k2e_social_science_v2": {
+    "hf_hub_url": "Saxo/ko_en_translation_social_science_linkbricks_single_dataset_v2",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
+  "Linkbricks_k2e_tech_science_v2": {
+    "hf_hub_url": "Saxo/ko_en_translation_tech_science_linkbricks_single_dataset_v2",
+    "columns": {
+      "prompt": "instruction",
+      "query": "context",
+      "response": "output"
+    }
+  },
   "Linkbricks_qa_government": {
     "hf_hub_url": "Saxo/ko_government_qa_total_linkbricks_single_dataset_with_prompt_text_huggingface_sampled",
     "columns": {
@@ -209,10 +263,26 @@
     }
   },
   "Linkbricks_qa_knowledge": {
-    "hf_hub_url": "HAERAE-HUB/qarv-instruct-100k",
+    "hf_hub_url": "wisenut-nlp-team/llama_ko_qa",
+    "subset": "admin",
     "columns": {
       "prompt": "instruction",
-      "response": "response"
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "Linkbricks_qa_cot_math_ko_1": {
+    "hf_hub_url": "ChuGyouk/AI-MO-NuminaMath-CoT-Ko",
+    "columns": {
+      "prompt": "problem_ko",
+      "response": "solution_ko"
+    }
+  },
+  "Linkbricks_qa_cot_math_en_1": {
+    "hf_hub_url": "ChuGyouk/AI-MO-NuminaMath-CoT-Ko",
+    "columns": {
+      "prompt": "problem",
+      "response": "solution"
     }
   },
   "Linkbricks_total": {
@@ -240,6 +310,15 @@
       "chosen": "chosen",
       "rejected": "rejected",
       "system": "system"
+    }
+  },
+  "Linkbricks_dpo_3": {
+    "hf_hub_url": "wisenut-nlp-team/DPO_train",
+    "ranking": true,
+    "columns": {
+      "prompt": "prompt",
+      "chosen": "chosen",
+      "rejected": "rejected"
     }
   },
   "Linkbricks_alpaca": {
@@ -338,6 +417,43 @@
     "hf_hub_url": "HAERAE-HUB/KOREAN-SyntheticText-1.5B",
     "columns": {
       "prompt": "text"
+    }
+  },
+  "Linkbricks_cpt_web_3": {
+    "hf_hub_url": "jamesagilesoda/ko-corpus-cleaned-12653878",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "Linkbricks_cpt_knowledge_1": {
+    "hf_hub_url": "lcw99/wikipedia-korean-20240501-1million-qna",
+    "columns": {
+      "prompt": "context"
+    }
+  },
+  "Linkbricks_cpt_knowledge_2": {
+    "hf_hub_url": "Saxo/namuwiki_ko_linkbricks_single_dataset_with_prompt_text_huggingface",
+    "columns": {
+      "prompt": "output"
+    }
+  },
+  "Linkbricks_cpt_knowledge_3": {
+    "hf_hub_url": "Saxo/ko_wiki_qa_linkbricks_single_dataset_with_prompt_text_huggingface",
+    "columns": {
+      "prompt": "output"
+    }
+  },
+  "Linkbricks_cpt_knowledge_4": {
+    "hf_hub_url": "Cohere/miracl-ko-corpus-22-12",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "Linkbricks_cpt_knowledge_5": {
+    "hf_hub_url": "wisenut-nlp-team/llama_ko_qa",
+    "subset": "admin",
+    "columns": {
+      "prompt": "output"
     }
   },
   "alpaca_en_demo": {

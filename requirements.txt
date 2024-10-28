@@ -19,4 +19,6 @@ fire
 packaging
 pyyaml
 numpy<2.0.0
-bitsandbytes==0.43.3
+bitsandbytes
+emoji
+soynlp
